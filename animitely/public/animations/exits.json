@@ -1,0 +1,16 @@
+{
+    "category": "Exits",
+    "animations": [
+      {
+        "id": "fade-out",
+        "name": "Fade Out",
+        "css": "@keyframes fade-out { from { opacity: 1; } to { opacity: 0; } } .fade-out { animation: fade-out 1s ease-in-out; }"
+      },
+      {
+        "id": "slide-out",
+        "name": "Slide Out",
+        "css": "@keyframes slide-out { from { transform: translateY(0); opacity: 1; } to { transform: translateY(100px); opacity: 0; } } .slide-out { animation: slide-out 1s ease-in-out; }"
+      }
+    ]
+  }
+  

@@ -1,0 +1,16 @@
+{
+    "category": "Entrances",
+    "animations": [
+      {
+        "id": "fade-in",
+        "name": "Fade In",
+        "css": "@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } } .fade-in { animation: fade-in 1s ease-in-out; }"
+      },
+      {
+        "id": "slide-in",
+        "name": "Slide In",
+        "css": "@keyframes slide-in { from { transform: translateY(100px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } .slide-in { animation: slide-in 1s ease-in-out; }"
+      }
+    ]
+  }
+  
