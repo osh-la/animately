@@ -1,6 +1,8 @@
+interface categoryProp {
+  setCategory: (category:string)=>void;
+}
 
-
-const Navigation:React.FC = ({ setCategory }) => {
+const Navigation:React.FC<categoryProp> = ({ setCategory }) => {
   return (
     <nav className="flex gap-4 p-4">
       {["entrances", "exits", "background", "attention_seekers", "Text"].map((cat) => (
