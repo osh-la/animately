@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "name": "Entrances",
+      "animations": [
+        {
+          "id": "fade-in",
+          "name": "Fade In",
+          "css": ".fade-in { animation: fadeIn 0.7s ease-in-out; } @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }"
+        }
+      ]
+    },
+    {
+      "name": "Exits",
+      "animations": [
+        {
+          "id": "fade-out",
+          "name": "Fade Out",
+          "css": ".fade-out { animation: fadeOut 0.7s ease-in-out; } @keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; } }"
+        }
+      ]
+    },
+    {
+      "name": "Backgrounds",
+      "animations": [
+        {
+          "id": "bg-wave",
+          "name": "Wave Background",
+          "css": ".bg-wave { background: linear-gradient(45deg, #ff00ff, #0000ff); animation: waveMove 3s infinite alternate; } @keyframes waveMove { 0% { background-position: left; } 100% { background-position: right; } }"
+        }
+      ]
+    },
+    {
+      "name": "Attention Seekers",
+      "animations": [
+        {
+          "id": "shake",
+          "name": "Shake",
+          "css": ".shake { animation: shake 0.5s infinite alternate; } @keyframes shake { 0% { transform: translateX(-5px); } 100% { transform: translateX(5px); } }"
+        }
+      ]
+    }
+  ]
+}

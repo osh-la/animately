@@ -1,9 +1,9 @@
-import React from "react";
 
-const Navigation = ({ setCategory }) => {
+
+const Navigation:React.FC = ({ setCategory }) => {
   return (
     <nav className="flex gap-4 p-4">
-      {["entrances", "exits"].map((cat) => (
+      {["entrances", "exits", "background", "attention_seekers", "Text"].map((cat) => (
         <button
           key={cat}
           className="px-4 py-2 bg-blue-500 text-white rounded"

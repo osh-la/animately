@@ -1,0 +1,16 @@
+{
+    "category": "background",
+    "animations": [
+      {
+        "id": "fade-inout",
+        "name": "Fade Inin",
+        "css": "@keyframes fade-in { from { opacity: 0; } to { opacity: 0.6; } } .fade-in { animation: fade-in 1s ease-in-out; }"
+      },
+      {
+        "id": "slide-inin",
+        "name": "Slide Inout",
+        "css": "@keyframes slide-in { from { transform: translateY(100px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } .slide-in { animation: slide-in 1s ease-in-out; }"
+      }
+    ]
+  }
+  
