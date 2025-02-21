@@ -27,7 +27,7 @@ const AnimationPreview = ({ animation }) => {
   return (
     <div className={`p-10 flex justify-center items-center min-h-[200px] ${animationClass}`}>
       {animation ? (
-        <div className="w-32 h-32 bg-blue-400"></div>
+        <div className="w-60 h-60 bg-blue-400"></div>
       ) : (
         <p>Select an animation</p>
       )}

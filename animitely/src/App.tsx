@@ -15,11 +15,16 @@ function App() {
   }, []);
 
   return (
-    <div className="flex space-x-4">
+   <>
+   <div className="py-10">
+    <h1 className="font-black text-5xl"><a href="/">Animately</a></h1>
+   </div>
+    <div className="flex justify-between">
       <AnimationList categories={categories} onSelect={setSelectedAnimation} />
       <AnimationPreview animation={selectedAnimation} />
       <CodeSnippet animation={selectedAnimation} />
     </div>
+   </>
   );
 }
 

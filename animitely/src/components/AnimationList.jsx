@@ -1,10 +1,12 @@
 const AnimationList = ({ categories, onSelect }) => {
   return (
+    <>
+    <div className="flex">
     <div className="w-60 p-4 bg-white shadow-md h-screen">
       <h2 className="text-xl font-semibold mb-4">Select an Animation</h2>
       {categories.map((category) => (
         <div key={category.name} className="mb-4">
-          <h3 className="font-semibold text-gray-600">{category.name}</h3>
+          <h3 className="font-semibold text-black">{category.name}</h3>
           <ul>
             {category.animations.map((anim) => (
               <li
@@ -19,6 +21,9 @@ const AnimationList = ({ categories, onSelect }) => {
         </div>
       ))}
     </div>
+    
+    </div>
+    </>
   );
 };
 

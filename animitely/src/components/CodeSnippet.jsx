@@ -15,6 +15,7 @@ const CodeSnippet = ({ animation }) => {
       <pre className="overflow-auto p-2 bg-gray-800 rounded-md text-sm">
         <code>{code || "Select an animation to see its CSS"}</code>
       </pre>
+      <button className="border-2 mt-10 p-4 border-white">Generate Tailwind css</button>
     </div>
   );
 };
