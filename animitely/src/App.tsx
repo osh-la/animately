@@ -1,31 +1,27 @@
-import { useState, useEffect } from "react";
-import AnimationList from "./components/AnimationList";
+import React, { useState } from "react";
 import AnimationPreview from "./components/AnimationPreview";
-import CodeSnippet from "./components/CodeSnippet";
+import AnimationList from "./components/AnimationList";
+import CodeSnippet from "./components/CodeSnippet"
 
-function App() {
-  const [categories, setCategories] = useState([]);
-  const [selectedAnimation, setSelectedAnimation] = useState(null);
-
-  useEffect(() => {
-    fetch("/Animations.json")
-      .then((res) => res.json())
-      .then((data) => setCategories(data.categories))
-      .catch((err) => console.error("Error loading animations:", err));
-  }, []);
+const App: React.FC = () => {
+  const [selectedAnimation, setSelectedAnimation] = useState<{
+    id: string;
+    name: string;
+    css: string;
+  } | null>(null);
 
   return (
-   <>
-   <div className="py-10">
-    <h1 className="font-black text-5xl"><a href="/">Animately</a></h1>
-   </div>
-    <div className="flex justify-between">
-      <AnimationList categories={categories} onSelect={setSelectedAnimation} />
-      <AnimationPreview animation={selectedAnimation} />
-      <CodeSnippet animation={selectedAnimation} />
+    <div className="flex h-screen">
+      {/* Sidebar: Animation List */}
+      <AnimationList onSelectAnimation={setSelectedAnimation} />
+
+      {/* Main Content: Animation Preview & Code */}
+      <div className="flex-1 flex flex-col items-center justify-center">
+        <AnimationPreview animation={selectedAnimation} />
+        <CodeSnippet animation={selectedAnimation} />
+      </div>
     </div>
-   </>
   );
-}
+};
 
 export default App;
