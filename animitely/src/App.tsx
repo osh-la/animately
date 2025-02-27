@@ -12,10 +12,10 @@ const App: React.FC = () => {
 
   return (
     <div className="flex h-screen">
-      {/* Sidebar: Animation List */}
+   
       <AnimationList onSelectAnimation={setSelectedAnimation} />
 
-      {/* Main Content: Animation Preview & Code */}
+    
       <div className="flex-1 flex flex-col items-center justify-center">
         <AnimationPreview animation={selectedAnimation} />
         <CodeSnippet animation={selectedAnimation} />
