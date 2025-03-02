@@ -33,8 +33,8 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
   }, []);
 
   return (
-    <div className="p-4 w-80 border-r border-gray-300">
-      <h2 className="text-lg font-bold mb-4">Animation Categories</h2>
+    <div className="p-4 w-2/5 border-r border-gray-300">
+      <h2 className="text-3xl font-bold mb-4">Select Category</h2>
       {categories.map((category) => (
         <div key={category.name} className="mb-2">
           <h3 
