@@ -26,51 +26,66 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/Animations.json") 
+    fetch("/Animations.json")
       .then((response) => response.json())
       .then((data) => setCategories(data.categories))
       .catch((error) => console.error("Error loading animations.json:", error));
   }, []);
 
   return (
-    <div className="p-4 w-2/5 border-r border-gray-300">
-      <h2 className="text-3xl font-bold mb-4">Select Category</h2>
-      {categories.map((category) => (
-        <div key={category.name} className="mb-2">
-          <h3 
-            className="text-md font-semibold cursor-pointer hover:text-blue-500"
-            onClick={() => setSelectedCategory(category.name === selectedCategory ? null : category.name)}
+    <div className="w-full">
+     
+      <div className="flex justify-start bg-black gap-4 mb-6 border-b p-6">
+        {categories.map((category) => (
+          <button
+            key={category.name}
+            className={`px-6 py-2 rounded-full text-lg font-semibold transition-all duration-300 ${
+              selectedCategory === category.name ? "bg-black text-white" : "bg-gray-200 hover:bg-gray-300"
+            }`}
+            onClick={() => {
+              setSelectedCategory(category.name === selectedCategory ? null : category.name);
+              setSelectedSubcategory(null);
+            }}
           >
             {category.name}
-          </h3>
-          {selectedCategory === category.name && (
-            <div className="ml-4">
-              {category.subcategories.map((sub) => (
-                <h4 
-                  key={sub.name} 
-                  className="text-sm font-medium text-gray-600 cursor-pointer hover:text-blue-500"
-                  onClick={() => setSelectedSubcategory(sub.name === selectedSubcategory ? null : sub.name)}
-                >
-                  {sub.name}
-                </h4>
-              ))}
-              {selectedSubcategory && (
-                <ul className="ml-4">
-                  {category.subcategories.find(sub => sub.name === selectedSubcategory)?.animations.map((anim) => (
-                    <li
-                      key={anim.id}
-                      className="cursor-pointer text-blue-500 hover:underline"
-                      onClick={() => onSelectAnimation(anim)}
-                    >
-                      {anim.name}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          )}
+          </button>
+        ))}
+      </div>
+
+      {/* Subcategory Selection */}
+      {selectedCategory && (
+        <div className="flex gap-4 mb-6">
+          {categories.find((cat) => cat.name === selectedCategory)?.subcategories.map((sub) => (
+            <button
+              key={sub.name}
+              className={`px-6 py-12 rounded-full text-lg font-medium transition-all duration-300 ${
+                selectedSubcategory === sub.name ? "bg-black text-white" : "bg-gray-200 hover:bg-gray-300"
+              }`}
+              onClick={() => setSelectedSubcategory(sub.name === selectedSubcategory ? null : sub.name)}
+            >
+              {sub.name}
+            </button>
+          ))}
         </div>
-      ))}
+      )}
+
+      {/* Animation List */}
+      {selectedSubcategory && (
+        <div className="grid grid-cols-6 gap-4">
+          {categories
+            .find((cat) => cat.name === selectedCategory)
+            ?.subcategories.find((sub) => sub.name === selectedSubcategory)
+            ?.animations.map((anim) => (
+              <button
+                key={anim.id}
+                className="p-4 rounded-lg transition text-lg font-medium"
+                onClick={() => onSelectAnimation(anim)}
+              >
+                {anim.name}
+              </button>
+            ))}
+        </div>
+      )}
     </div>
   );
 };
