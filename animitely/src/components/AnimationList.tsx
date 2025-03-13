@@ -35,7 +35,7 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
   return (
     <div className="w-full">
      
-      <div className="flex justify-start bg-black gap-4 mb-6 border-b p-6">
+      <div className="flex justify-start bg-black gap-4 border-b p-6">
         {categories.map((category) => (
           <button
             key={category.name}
@@ -54,11 +54,11 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
 
       {/* Subcategory Selection */}
       {selectedCategory && (
-        <div className="flex gap-4 mb-6">
+        <div className="flex gap-4 bg-gray-200 p-6 ">
           {categories.find((cat) => cat.name === selectedCategory)?.subcategories.map((sub) => (
             <button
               key={sub.name}
-              className={`px-6 py-12 rounded-full text-lg font-medium transition-all duration-300 ${
+              className={`rounded-full text-lg font-medium transition-all duration-300 ${
                 selectedSubcategory === sub.name ? "bg-black text-white" : "bg-gray-200 hover:bg-gray-300"
               }`}
               onClick={() => setSelectedSubcategory(sub.name === selectedSubcategory ? null : sub.name)}
