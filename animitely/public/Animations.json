@@ -234,32 +234,32 @@
             {
               "id": "bounce-in-forward",
               "name": "Bounce In Forward",
-              "css": ".bounce-in-forward { animation: bounceInForward 0.7s ease-out both; } @keyframes bounceInForward { 0% { transform: scale(0.3) translateZ(-200px); opacity: 0; } 50% { transform: scale(1.1) translateZ(20px); opacity: 1; } 100% { transform: scale(1) translateZ(0); opacity: 1; } }"
+              "css": ".bounce-in-forward { animation: bounceInForward 0.7s ease-out both; } @keyframes bounceInForward { 0% { transform: scale(0.3) translateZ(-200px); opacity: 0; } 50% { transform: scale(1.1) translateZ(20px); opacity: 1; } 70% {transform: scale(0.8) translateZ(-10px); opacity: 0.9;} 100% { transform: scale(1) translateZ(0); opacity: 1; } }"
             },
             {
               "id": "bounce-in-backward",
               "name": "Bounce In Backward",
-              "css": ".bounce-in-backward { animation: bounceInBackward 0.7s ease-out both; } @keyframes bounceInBackward { 0% { transform: scale(2) translateZ(200px); opacity: 0; } 50% { transform: scale(0.9) translateZ(-20px); opacity: 1; } 100% { transform: scale(1) translateZ(0); opacity: 1; } }"
+              "css": ".bounce-in-backward { animation: bounceInBackward 0.7s ease-out both; } @keyframes bounceInBackward { 0% { transform: scale(2) translateZ(200px); opacity: 0; } 50% { transform: scale(1.1) translateZ(-20px); opacity: 1; } 70% {transform: scale(0.8) translateZ(10px); opacity:0.9;} 100% { transform: scale(1) translateZ(0); opacity: 1; } }"
             },
             {
               "id": "bounce-in-left",
               "name": "Bounce In Left",
-              "css": ".bounce-in-left { animation: bounceInLeft 0.7s ease-out both; } @keyframes bounceInLeft { 0% { transform: translateX(-200px) scale(0.3); opacity: 0; } 50% { transform: translateX(20px) scale(1.1); opacity: 1; } 100% { transform: translateX(0) scale(1); opacity: 1; } }"
+              "css": ".bounce-in-left { animation: bounceInLeft 0.7s ease-out both; } @keyframes bounceInLeft { 0% { transform: translateX(-200px) scale(0.3); opacity: 0; } 50% { transform: translateX(20px) scale(1.1); opacity: 1; } 70% {transform: translateX(-10px) scale(0.8); opacity:0.9;} 100% { transform: translateX(0) scale(1); opacity: 1; } }"
             },
             {
               "id": "bounce-in-right",
               "name": "Bounce In Right",
-              "css": ".bounce-in-right { animation: bounceInRight 0.7s ease-out both; } @keyframes bounceInRight { 0% { transform: translateX(200px) scale(0.3); opacity: 0; } 50% { transform: translateX(-20px) scale(1.1); opacity: 1; } 100% { transform: translateX(0) scale(1); opacity: 1; } }"
+              "css": ".bounce-in-right { animation: bounceInRight 0.7s ease-out both; } @keyframes bounceInRight { 0% { transform: translateX(200px) scale(0.3); opacity: 0; } 50% { transform: translateX(-20px) scale(1.1); opacity: 1; } 70% {transform: translateX(10px) scale(0.8); opacity:0.9;} 100% { transform: translateX(0) scale(1); opacity: 1; } }"
             },
             {
               "id": "bounce-in-top",
               "name": "Bounce In Top",
-              "css": ".bounce-in-top { animation: bounceInTop 0.7s ease-out both; } @keyframes bounceInTop { 0% { transform: translateY(-200px) scale(0.3); opacity: 0; } 50% { transform: translateY(20px) scale(1.1); opacity: 1; } 100% { transform: translateY(0) scale(1); opacity: 1; } }"
+              "css": ".bounce-in-top { animation: bounceInTop 0.7s ease-out both; } @keyframes bounceInTop { 0% { transform: translateY(-200px) scale(0.3); opacity: 0; } 50% { transform: translateY(20px) scale(1.1); opacity: 1; } 70% {transform: translateY(-10px) scale(0.8); opacity:0.9;} 100% { transform: translateY(0) scale(1); opacity: 1; } }"
             },
             {
               "id": "bounce-in-bottom",
               "name": "Bounce In Bottom",
-              "css": ".bounce-in-bottom { animation: bounceInBottom 0.7s ease-out both; } @keyframes bounceInBottom { 0% { transform: translateY(200px) scale(0.3); opacity: 0; } 50% { transform: translateY(-20px) scale(1.1); opacity: 1; } 100% { transform: translateY(0) scale(1); opacity: 1; } }"
+              "css": ".bounce-in-bottom { animation: bounceInBottom 0.7s ease-out both; } @keyframes bounceInBottom { 0% { transform: translateY(200px) scale(0.3); opacity: 0; } 50% { transform: translateY(-20px) scale(1.1); opacity: 1; } 70% {transform: translateY(10px) scale(0.8); opacity:0.9;} 100% { transform: translateY(0) scale(1); opacity: 1; } }"
             }
           
           ]
@@ -389,7 +389,7 @@
             {
               "id": "slide-out-center",
               "name": "Slide Out Center",
-              "css": ".slide-out-center { animation: slideOutCenter 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; } @keyframes slideOutCenter { 0% { transform: translate(0, 0); opacity: 1; } 100% { transform: translate(0, 0) scale(0); opacity: 0; } }"
+              "css": ".slide-out-center { animation: slideOutCenter 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; } @keyframes slideOutCenter { 0% { transform: translate(0, 0); opacity: 1; } 50% {transform: translate()} 100% { transform: translate(0, 0) scale(0); opacity: 0; } }"
             },
             {
               "id": "slide-out-top",
@@ -420,25 +420,249 @@
             {
               "id": "bounce-out-top",
               "name": "Bounce Out Top",
-              "css": ".bounce-out-top { animation: bounceOutTop 0.7s both; } @keyframes bounceOutTop { 0% { transform: translateY(0); opacity: 1; } 50% { transform: translateY(-30px); opacity: 0.5; } 70%{transform: translateY(30px); opacity: 0.8;} 100% { transform: translateY(-100px); opacity: 0; } }"
+              "css": ".bounce-out-top { animation: bounceOutTop 0.7s both; } @keyframes bounceOutTop { 0% { transform: translateY(0); opacity: 1; } 50% { transform: translateY(-30px); opacity: 0.5; } 70% {transform: translateY(20px); opacity: 0.8;} 100% { transform: translateY(-100px); opacity: 0; } }"
             },
             {
               "id": "bounce-out-bottom",
               "name": "Bounce Out Bottom",
-              "css": ".bounce-out-bottom { animation: bounceOutBottom 0.7s both; } @keyframes bounceOutBottom { 0% { transform: translateY(0); opacity: 1; } 50% { transform: translateY(30px); opacity: 0.5; } 70%{transform: translateY(-30px); opacity:0.8;} 100% { transform: translateY(100px); opacity: 0; } }"
+              "css": ".bounce-out-bottom { animation: bounceOutBottom 0.7s both; } @keyframes bounceOutBottom { 0% { transform: translateY(0); opacity: 1; } 50% { transform: translateY(30px); opacity: 0.5; } 70%{transform: translateY(-20px); opacity:0.8;} 100% { transform: translateY(100px); opacity: 0; } }"
             },
             {
               "id": "bounce-out-left",
               "name": "Bounce Out Left",
-              "css": ".bounce-out-left { animation: bounceOutLeft 0.7s both; } @keyframes bounceOutLeft { 0% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(-30px); opacity: 0.5; } 70%{transform: translateX(30px); opacity:0.8;} 100% { transform: translateX(-100px); opacity: 0; } }"
+              "css": ".bounce-out-left { animation: bounceOutLeft 0.7s both; } @keyframes bounceOutLeft { 0% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(-30px); opacity: 0.5; } 70%{transform: translateX(20px); opacity:0.8;} 100% { transform: translateX(-100px); opacity: 0; } }"
             },
             {
               "id": "bounce-out-right",
               "name": "Bounce Out Right",
-              "css": ".bounce-out-right { animation: bounceOutRight 0.7s both; } @keyframes bounceOutRight { 0% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(30px); opacity: 0.5; } 70%{ transform:translateX(-30px); opacity:0.8;} 100% { transform: translateX(100px); opacity: 0; } }"
+              "css": ".bounce-out-right { animation: bounceOutRight 0.7s both; } @keyframes bounceOutRight { 0% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(30px); opacity: 0.5; } 70%{ transform:translateX(-20px); opacity:0.8;} 100% { transform: translateX(100px); opacity: 0; } }"
             }
           
           ]
+        },{
+          "name":"Roll out",
+          "animations":
+          [
+            {
+              "id": "roll-out-top",
+              "name": "Roll Out Top",
+              "css": ".roll-out-top { animation: rollOutTop 0.6s ease-in both; } @keyframes rollOutTop { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(-300px) rotate(-360deg); opacity: 0; } }"
+            },
+            {
+              "id": "roll-out-bottom",
+              "name": "Roll Out Bottom",
+              "css": ".roll-out-bottom { animation: rollOutBottom 0.6s ease-in both; } @keyframes rollOutBottom { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(300px) rotate(360deg); opacity: 0; } }"
+            },
+            {
+              "id": "roll-out-left",
+              "name": "Roll Out Left",
+              "css": ".roll-out-left { animation: rollOutLeft 0.6s ease-in both; } @keyframes rollOutLeft { 0% { transform: translateX(0) rotate(0deg); opacity: 1; } 100% { transform: translateX(-300px) rotate(-360deg); opacity: 0; } }"
+            },
+            {
+              "id": "roll-out-right",
+              "name": "Roll Out Right",
+              "css": ".roll-out-right { animation: rollOutRight 0.6s ease-in both; } @keyframes rollOutRight { 0% { transform: translateX(0) rotate(0deg); opacity: 1; } 100% { transform: translateX(300px) rotate(360deg); opacity: 0; } }"
+            },
+            {
+              "id": "roll-out-blurred-top",
+              "name": "Roll Out Blurred Top",
+              "css": ".roll-out-blurred-top { animation: rollOutBlurredTop 0.6s ease-in both; } @keyframes rollOutBlurredTop { 0% { transform: translateY(0) rotate(0deg); opacity: 1; filter: blur(0px); } 100% { transform: translateY(-300px) rotate(-360deg); opacity: 0; filter: blur(10px); } }"
+            },
+            {
+              "id": "roll-out-blurred-bottom",
+              "name": "Roll Out Blurred Bottom",
+              "css": ".roll-out-blurred-bottom { animation: rollOutBlurredBottom 0.6s ease-in both; } @keyframes rollOutBlurredBottom { 0% { transform: translateY(0) rotate(0deg); opacity: 1; filter: blur(0px); } 100% { transform: translateY(300px) rotate(360deg); opacity: 0; filter: blur(10px); } }"
+            },
+            {
+              "id": "roll-out-blurred-left",
+              "name": "Roll Out Blurred Left",
+              "css": ".roll-out-blurred-left { animation: rollOutBlurredLeft 0.6s ease-in both; } @keyframes rollOutBlurredLeft { 0% { transform: translateX(0) rotate(0deg); opacity: 1; filter: blur(0px); } 100% { transform: translateX(-300px) rotate(-360deg); opacity: 0; filter: blur(10px); } }"
+            },
+            {
+              "id": "roll-out-blurred-right",
+              "name": "Roll Out Blurred Right",
+              "css": ".roll-out-blurred-right { animation: rollOutBlurredRight 0.6s ease-in both; } @keyframes rollOutBlurredRight { 0% { transform: translateX(0) rotate(0deg); opacity: 1; filter: blur(0px); } 100% { transform: translateX(300px) rotate(360deg); opacity: 0; filter: blur(10px); } }"
+            }
+          ]
+        },{
+          "name":"Fade out",
+          "animations":[
+            {
+              "id": "fade-out-top",
+              "name": "Fade Out Top",
+              "css": ".fade-out-top { animation: fadeOutTop 0.6s ease-out both; } @keyframes fadeOutTop { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(-50px); opacity: 0; } }"
+            },
+            {
+              "id": "fade-out-bottom",
+              "name": "Fade Out Bottom",
+              "css": ".fade-out-bottom { animation: fadeOutBottom 0.6s ease-out both; } @keyframes fadeOutBottom { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(50px); opacity: 0; } }"
+            },
+            {
+              "id": "fade-out-left",
+              "name": "Fade Out Left",
+              "css": ".fade-out-left { animation: fadeOutLeft 0.6s ease-out both; } @keyframes fadeOutLeft { 0% { transform: translateX(0); opacity: 1; } 100% { transform: translateX(-50px); opacity: 0; } }"
+            },
+            {
+              "id": "fade-out-right",
+              "name": "Fade Out Right",
+              "css": ".fade-out-right { animation: fadeOutRight 0.6s ease-out both; } @keyframes fadeOutRight { 0% { transform: translateX(0); opacity: 1; } 100% { transform: translateX(50px); opacity: 0; } }"
+            },
+            {
+              "id": "puff-out",
+              "name": "Puff Out Center",
+              "css": ".puff-out-center { animation: puffOutCenter 0.6s ease-out both; } @keyframes puffOutCenter { 0% { transform: scale(1); opacity: 1; filter: blur(0px); } 100% { transform: scale(2); opacity: 0; filter: blur(10px); } }"
+            }
+            
+          ]
+        },{
+          "name":"Flicker out",
+          "animations":[
+            {
+              "id": "flicker-out",
+              "name": "Flicker Out",
+              "css": ".flicker-out { animation: flickerOut 1s ease-out both; } @keyframes flickerOut { 0% { opacity: 1; } 20% { opacity: 0.4; } 40% { opacity: 0.8; } 60% { opacity: 0.2; } 80% { opacity: 0.6; } 100% { opacity: 0; } }"
+            }
+            
+          ]
+        }
+      ]
+    },
+    
+    
+    {
+      "name":"Text",
+      "subcategories":[
+        {
+          "name":"Tracking in",
+          "animations":[
+            {
+              "id": "tracking-in-expand",
+              "name": "Tracking In Expand",
+              "css": ".tracking-in-expand { animation: trackingInExpand 0.6s ease-out both; } @keyframes trackingInExpand { 0% { letter-spacing: -0.5em; opacity: 0; } 100% { letter-spacing: normal; opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-expand-top",
+              "name": "Tracking In Expand Top",
+              "css": ".tracking-in-expand-top { animation: trackingInExpandTop 0.6s ease-out both; } @keyframes trackingInExpandTop { 0% { letter-spacing: -0.5em; transform: translateY(-30px); opacity: 0; } 100% { letter-spacing: normal; transform: translateY(0); opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-expand-bottom",
+              "name": "Tracking In Expand Bottom",
+              "css": ".tracking-in-expand-bottom { animation: trackingInExpandBottom 0.6s ease-out both; } @keyframes trackingInExpandBottom { 0% { letter-spacing: -0.5em; transform: translateY(30px); opacity: 0; } 100% { letter-spacing: normal; transform: translateY(0); opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-expand-left",
+              "name": "Tracking In Expand Left",
+              "css": ".tracking-in-expand-left { animation: trackingInExpandLeft 0.6s ease-out both; } @keyframes trackingInExpandLeft { 0% { letter-spacing: -0.5em; transform: translateX(-30px); opacity: 0; } 100% { letter-spacing: normal; transform: translateX(0); opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-expand-right",
+              "name": "Tracking In Expand Right",
+              "css": ".tracking-in-expand-right { animation: trackingInExpandRight 0.6s ease-out both; } @keyframes trackingInExpandRight { 0% { letter-spacing: -0.5em; transform: translateX(30px); opacity: 0; } 100% { letter-spacing: normal; transform: translateX(0); opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-contract",
+              "name": "Tracking In Contract",
+              "css": ".tracking-in-contract { animation: trackingInContract 0.6s ease-out both; } @keyframes trackingInContract { 0% { letter-spacing: 0.5em; opacity: 0; } 100% { letter-spacing: normal; opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-contract-top",
+              "name": "Tracking In Contract Top",
+              "css": ".tracking-in-contract-top { animation: trackingInContractTop 0.6s ease-out both; } @keyframes trackingInContractTop { 0% { letter-spacing: 0.5em; transform: translateY(-30px); opacity: 0; } 100% { letter-spacing: normal; transform: translateY(0); opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-contract-bottom",
+              "name": "Tracking In Contract Bottom",
+              "css": ".tracking-in-contract-bottom { animation: trackingInContractBottom 0.6s ease-out both; } @keyframes trackingInContractBottom { 0% { letter-spacing: 0.5em; transform: translateY(30px); opacity: 0; } 100% { letter-spacing: normal; transform: translateY(0); opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-contract-left",
+              "name": "Tracking In Contract Left",
+              "css": ".tracking-in-contract-left { animation: trackingInContractLeft 0.6s ease-out both; } @keyframes trackingInContractLeft { 0% { letter-spacing: 0.5em; transform: translateX(-30px); opacity: 0; } 100% { letter-spacing: normal; transform: translateX(0); opacity: 1; } }"
+            },
+            {
+              "id": "tracking-in-contract-right",
+              "name": "Tracking In Contract Right",
+              "css": ".tracking-in-contract-right { animation: trackingInContractRight 0.6s ease-out both; } @keyframes trackingInContractRight { 0% { letter-spacing: 0.5em; transform: translateX(30px); opacity: 0; } 100% { letter-spacing: normal; transform: translateX(0); opacity: 1; } }"
+            }
+          ]
+          
+        },{
+          "name":"Tracking Out",
+          "animations":[
+            {
+              "id": "tracking-out",
+              "name": "Tracking Out",
+              "css": ".tracking-out { animation: trackingOut 0.6s ease-out both; } @keyframes trackingOut { 0% { letter-spacing: normal; opacity: 1; } 100% { letter-spacing: 0.5em; opacity: 0; } }"
+            },
+            {
+              "id": "tracking-out-top",
+              "name": "Tracking Out Top",
+              "css": ".tracking-out-top { animation: trackingOutTop 0.6s ease-out both; } @keyframes trackingOutTop { 0% { letter-spacing: normal; opacity: 1; transform: translateY(0); } 100% { letter-spacing: 0.5em; opacity: 0; transform: translateY(-30px); } }"
+            },
+            {
+              "id": "tracking-out-bottom",
+              "name": "Tracking Out Bottom",
+              "css": ".tracking-out-bottom { animation: trackingOutBottom 0.6s ease-out both; } @keyframes trackingOutBottom { 0% { letter-spacing: normal; opacity: 1; transform: translateY(0); } 100% { letter-spacing: 0.5em; opacity: 0; transform: translateY(30px); } }"
+            },
+            {
+              "id": "tracking-out-left",
+              "name": "Tracking Out Left",
+              "css": ".tracking-out-left { animation: trackingOutLeft 0.6s ease-out both; } @keyframes trackingOutLeft { 0% { letter-spacing: normal; opacity: 1; transform: translateX(0); } 100% { letter-spacing: 0.5em; opacity: 0; transform: translateX(-30px); } }"
+            },
+            {
+              "id": "tracking-out-right",
+              "name": "Tracking Out Right",
+              "css": ".tracking-out-right { animation: trackingOutRight 0.6s ease-out both; } @keyframes trackingOutRight { 0% { letter-spacing: normal; opacity: 1; transform: translateX(0); } 100% { letter-spacing: 0.5em; opacity: 0; transform: translateX(30px); } }"
+            }
+          ]
+          
+        },
+        {
+          "name":"Focus In",
+          "animations":[
+            {
+              "id": "focus-in-expand",
+              "name": "Focus In Expand",
+              "css": ".focus-in-expand { animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; } @keyframes focus-in-expand { 0% { transform: scale(0.5); filter: blur(10px); opacity: 0; } 100% { transform: scale(1); filter: blur(0); opacity: 1; } }"
+            },
+            {
+              "id": "focus-in-forward",
+              "name": "Focus In Forward",
+              "css": ".focus-in-forward { animation: focus-in-forward 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; } @keyframes focus-in-forward { 0% { transform: translateZ(-200px); filter: blur(10px); opacity: 0; } 100% { transform: translateZ(0); filter: blur(0); opacity: 1; } }"
+            },
+            {
+              "id": "focus-in-contract",
+              "name": "Focus In Contract",
+              "css": ".focus-in-contract { animation: focus-in-contract 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; } @keyframes focus-in-contract { 0% { transform: scale(1.5); filter: blur(10px); opacity: 0; } 100% { transform: scale(1); filter: blur(0); opacity: 1; } }"
+            },
+            {
+              "id": "focus-in-contract-backwards",
+              "name": "Focus In Contract Backwards",
+              "css": ".focus-in-contract-backwards { animation: focus-in-contract-backwards 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; } @keyframes focus-in-contract-backwards { 0% { transform: translateZ(200px); filter: blur(10px); opacity: 0; } 100% { transform: translateZ(0); filter: blur(0); opacity: 1; } }"
+            }
+          ]
+          
+        },{
+          "name":"Blur Out",
+          "animations":[
+            {
+              "id": "blur-out",
+              "name": "Blur Out",
+              "css": ".blur-out { animation: blur-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; } @keyframes blur-out { 0% { filter: blur(0px); opacity: 1; } 100% { filter: blur(10px); opacity: 0; } }"
+            },
+            {
+              "id": "blur-out-contract",
+              "name": "Blur Out Contract",
+              "css": ".blur-out-contract { animation: blur-out-contract 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; } @keyframes blur-out-contract { 0% { transform: scale(1); filter: blur(0px); opacity: 1; } 100% { transform: scale(0.8); filter: blur(10px); opacity: 0; } }"
+            },
+            {
+              "id": "blur-out-expand",
+              "name": "Blur Out Expand",
+              "css": ".blur-out-expand { animation: blur-out-expand 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; } @keyframes blur-out-expand { 0% { transform: scale(1); filter: blur(0px); opacity: 1; } 100% { transform: scale(1.2); filter: blur(10px); opacity: 0; } }"
+            }
+          ]
+          
         }
       ]
     },
@@ -467,8 +691,53 @@
               "id": "shake",
               "name": "Shake",
               "css": ".shake { animation: shake 0.5s infinite alternate; } @keyframes shake { 0% { transform: translateX(-5px); } 100% { transform: translateX(5px); } }"
+            },{
+              "id": "vibrate",
+              "name": "Vibrate",
+              "css": ".vibrate { animation: vibrate 0.4s infinite linear; } @keyframes vibrate { 0% { transform: translateX(-2px); } 25% { transform: translateX(2px); } 50% { transform: translateX(-2px); } 75% { transform: translateX(2px); } 100% { transform: translateX(-2px); } }"
             }
+            
           ]
+        },{
+          "name":"Flicker",
+          "animations":[
+            {
+              "id": "flicker",
+              "name": "Flicker",
+              "css": ".flicker { animation: flicker 0.15s infinite alternate; } @keyframes flicker { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }"
+            }
+            
+          ]
+        },{
+          "name":"Shake",
+          "animations":[
+            {
+              "id": "shake-horizontal",
+              "name": "Shake Horizontal",
+              "css": ".shake-horizontal { animation: shake-horizontal 0.5s infinite alternate; } @keyframes shake-horizontal { 0% { transform: translateX(-5px); } 100% { transform: translateX(5px); } }"
+            },
+            {
+              "id": "shake-vertical",
+              "name": "Shake Vertical",
+              "css": ".shake-vertical { animation: shake-vertical 0.5s infinite alternate; } @keyframes shake-vertical { 0% { transform: translateY(-5px); } 100% { transform: translateY(5px); } }"
+            }
+            
+            
+          ]
+        },{
+          "name":"Jelly",
+          "animations": [
+              {
+                "id": "jello-horizontal",
+                "name": "Jello Horizontal",
+                "css": ".jello-horizontal { animation: jello-horizontal 0.8s infinite ease-in-out; } @keyframes jello-horizontal { 0% { transform: skewX(0deg); } 25% { transform: skewX(10deg); } 50% { transform: skewX(-10deg); } 75% { transform: skewX(5deg); } 100% { transform: skewX(0deg); } }"
+              },
+              {
+                "id": "jello-vertical",
+                "name": "Jello Vertical",
+                "css": ".jello-vertical { animation: jello-vertical 0.8s infinite ease-in-out; } @keyframes jello-vertical { 0% { transform: skewY(0deg); } 25% { transform: skewY(10deg); } 50% { transform: skewY(-10deg); } 75% { transform: skewY(5deg); } 100% { transform: skewY(0deg); } }"
+              }
+            ]
         }
       ]
     }

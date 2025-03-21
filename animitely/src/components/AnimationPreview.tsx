@@ -27,7 +27,7 @@ const AnimationPreview: React.FC<AnimationPreviewProps> = ({ animation }) => {
     <div className="p-10 flex flex-col items-center justify-center min-h-[300px]">
       {animation ? (
         <>
-          <div className={`w-32 h-32 bg-blue-400 ${animation.id}`}></div>
+          <div className={` ${animation.id}`}> animation</div>
           <p className="mt-4 text-lg font-bold">{animation.name}</p>
         </>
       ) : (
