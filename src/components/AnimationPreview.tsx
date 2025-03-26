@@ -24,10 +24,10 @@ const AnimationPreview: React.FC<AnimationPreviewProps> = ({ animation }) => {
   }, [animation]);
 
   return (
-    <div className="p-10 flex flex-col items-center justify-center min-h-[300px]">
+    <div className=" bg-gray-200 p-10 flex flex-col items-center justify-center">
       {animation ? (
         <>
-          <div className={` ${animation.id}`}> animation</div>
+          <div className={`text-6xl font-extrabold italic p-10 ${animation.id} `}>Animation</div>
           <p className="mt-4 text-lg font-bold">{animation.name}</p>
         </>
       ) : (

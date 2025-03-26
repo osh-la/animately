@@ -11,10 +11,12 @@ const App: React.FC = () => {
   } | null>(null);
 
   return (
-    <div className="">
+    <div className="h-screen">
+      <nav className="flex justify-between p-6">
+        <h1 className="text-4xl font-extrabold">Animately</h1>
+      </nav>
    
       <AnimationList onSelectAnimation={setSelectedAnimation} />
-
     
       <div className="">
         <AnimationPreview animation={selectedAnimation} />

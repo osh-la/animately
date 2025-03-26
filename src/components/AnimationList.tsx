@@ -58,8 +58,8 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
           {categories.find((cat) => cat.name === selectedCategory)?.subcategories.map((sub) => (
             <button
               key={sub.name}
-              className={`rounded-full text-lg font-medium transition-all duration-300 ${
-                selectedSubcategory === sub.name ? "bg-black text-white" : "bg-gray-200 hover:bg-gray-300"
+              className={`rounded-full px-4 py-2 transition-all duration-300 ${
+                selectedSubcategory === sub.name ? "bg-gray-600 text-white" : "bg-gray-200 hover:bg-gray-300"
               }`}
               onClick={() => setSelectedSubcategory(sub.name === selectedSubcategory ? null : sub.name)}
             >
@@ -71,14 +71,14 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
 
       {/* Animation List */}
       {selectedSubcategory && (
-        <div className="grid grid-cols-6 gap-4">
+        <div className="flex gap-2 flex-wrap p-6">
           {categories
             .find((cat) => cat.name === selectedCategory)
             ?.subcategories.find((sub) => sub.name === selectedSubcategory)
             ?.animations.map((anim) => (
               <button
                 key={anim.id}
-                className="p-4 rounded-lg transition text-lg font-medium"
+                className={`p-4 transition text-sm `}
                 onClick={() => onSelectAnimation(anim)}
               >
                 {anim.name}
