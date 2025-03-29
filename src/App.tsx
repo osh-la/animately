@@ -29,7 +29,7 @@ const [progress, setProgress] = useState(0);
     <div className="relative h-screen">
       
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-[#C28F66] flex flex-col items-center justify-center transition-transform duration-1000 ease-in-out ${
+        className={`fixed top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center transition-transform duration-1000 ease-in-out ${
           loading ? "translate-y-0" : "-translate-y-full"
         }`}
       >
