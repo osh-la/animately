@@ -40,7 +40,7 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
           <button
             key={category.name}
             className={`px-6 py-2 rounded-md text-sm md:text-lg font-semibold transition-all duration-300 ${
-              selectedCategory === category.name ? "bg-black text-white" : "bg-gray-500 text-white hover:bg-gray-300"
+              selectedCategory === category.name ? "bg-black text-white" : "bg-gray-900 text-white hover:bg-gray-300"
             }`}
             onClick={() => {
               setSelectedCategory(category.name === selectedCategory ? null : category.name);
@@ -59,7 +59,7 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
             <button
               key={sub.name}
               className={`rounded-md px-4 py-2 transition-all duration-300 ${
-                selectedSubcategory === sub.name ? "bg-gray-600 text-white" : "bg-gray-200 hover:bg-gray-300"
+                selectedSubcategory === sub.name ? "bg-gray-600 text-white" : " text-white bg-gray-900 hover:bg-gray-300"
               }`}
               onClick={() => setSelectedSubcategory(sub.name === selectedSubcategory ? null : sub.name)}
             >
@@ -71,7 +71,7 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
 
       {/* Animation List */}
       {selectedSubcategory && (
-        <div className="flex gap-2 text-sm bg-gray-600 text-white flex-nowrap md:flex-wrap md:p-6 overflow-auto md:overflow-hidden">
+        <div className="flex gap-2 text-sm bg-gray-900 text-white flex-nowrap md:flex-wrap md:p-6 overflow-auto md:overflow-hidden">
           {categories
             .find((cat) => cat.name === selectedCategory)
             ?.subcategories.find((sub) => sub.name === selectedSubcategory)
