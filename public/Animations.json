@@ -407,7 +407,7 @@
             {
               "id": "slide-out-top",
               "name": "Slide Out Top",
-              "css": ".slide-out-top { animation: slideOutTop 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; } @keyframes slideOutTop { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(-100px); opacity: 0; } }"
+              "css": ".slide-out-top { animation: slideOutTop 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; } @keyframes slideOutTop { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(-30px); opacity: 0; } }"
             },
             {
               "id": "slide-out-left",
@@ -438,7 +438,7 @@
             {
               "id": "scale-out-top",
               "name": "Scale Out Top",
-              "css": ".scale-out-top { animation: scaleOutTop 0.7s ease-out both; } @keyframes scaleOutTop { 0% { transform: scale(1) translateY(0); opacity: 1; } 50% {transform:scale(1) translateY(-100px); opacity:1 } 100% { transform: scale(0) translateY(-100px); opacity: 0; } }"
+              "css": ".scale-out-top { animation: scaleOutTop 0.7s ease-out both; } @keyframes scaleOutTop { 0% { transform: scale(1) translateY(0); opacity: 1; } 50% {transform:scale(1) translateY(-30px); opacity:1 } 100% { transform: scale(0) translateY(-100px); opacity: 0; } }"
             },
             {
               "id": "scale-out-left",
@@ -596,8 +596,6 @@
         }
       ]
     },
-    
-    
     {
       "name":"Text",
       "subcategories":[
