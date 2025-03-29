@@ -665,7 +665,7 @@
             {
               "id": "tracking-out-top",
               "name": "Tracking Out Top",
-              "css": ".tracking-out-top { animation: trackingOutTop 0.6s ease-out both; } @keyframes trackingOutTop { 0% { letter-spacing: normal; opacity: 1; transform: translateY(0); } 100% { letter-spacing: 0.5em; opacity: 0; transform: translateY(-100px); } }"
+              "css": ".tracking-out-top { animation: trackingOutTop 0.6s ease-out both; } @keyframes trackingOutTop { 0% { letter-spacing: normal; opacity: 1; transform: translateY(0); } 100% { letter-spacing: 0.5em; opacity: 0; transform: translateY(-30px); } }"
             },
             {
               "id": "tracking-out-bottom",
