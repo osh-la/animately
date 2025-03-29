@@ -47,6 +47,9 @@ const [progress, setProgress] = useState(0);
           <CodeSnippet animation={selectedAnimation} />
         </div>
       </div>
+      <div className="flex justify-center">
+        <p className="font-semibold">@Osh_la 2025</p>
+      </div>
     </div>
   );
 };
