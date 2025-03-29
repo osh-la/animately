@@ -518,7 +518,7 @@
             {
               "id": "bounce-out-top",
               "name": "Bounce Out Top",
-              "css": ".bounce-out-top { animation: bounceOutTop 1s both; } @keyframes bounceOutTop { 0% { transform: translateY(0); opacity: 1; } 50% { transform: translateY(-30px); opacity: 0.5; } 70% {transform: translateY(20px); opacity: 0.8;} 100% { transform: translateY(-100px); opacity: 0; } }"
+              "css": ".bounce-out-top { animation: bounceOutTop 1s both; } @keyframes bounceOutTop { 0% { transform: translateY(0); opacity: 1; } 50% { transform: translateY(-30px); opacity: 0.5; } 70% {transform: translateY(20px); opacity: 0.8;} 100% { transform: translateY(-30px); opacity: 0; } }"
             },
             {
               "id": "bounce-out-bottom",
