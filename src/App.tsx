@@ -39,9 +39,7 @@ const [progress, setProgress] = useState(0);
 
       
       <div className={`transition-opacity duration-1000 ${loading ? "opacity-0" : "opacity-100"}`}>
-        <nav className=" bg-[#C28F66]">
-          <img className="object-contain h-20 w-20" src="/animately.png" alt="Animately Logo" />
-        </nav>
+       
 
         <div className="">
           <AnimationList onSelectAnimation={setSelectedAnimation} />

@@ -39,7 +39,7 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
         {categories.map((category) => (
           <button
             key={category.name}
-            className={`px-6 py-2 rounded-full text-sm md:text-lg font-semibold transition-all duration-300 ${
+            className={`px-6 py-2 rounded-md text-sm md:text-lg font-semibold transition-all duration-300 ${
               selectedCategory === category.name ? "bg-black text-white" : "bg-gray-500 text-white hover:bg-gray-300"
             }`}
             onClick={() => {
@@ -58,7 +58,7 @@ const AnimationList: React.FC<AnimationListProps> = ({ onSelectAnimation }) => {
           {categories.find((cat) => cat.name === selectedCategory)?.subcategories.map((sub) => (
             <button
               key={sub.name}
-              className={`rounded-full px-4 py-2 transition-all duration-300 ${
+              className={`rounded-md px-4 py-2 transition-all duration-300 ${
                 selectedSubcategory === sub.name ? "bg-gray-600 text-white" : "bg-gray-200 hover:bg-gray-300"
               }`}
               onClick={() => setSelectedSubcategory(sub.name === selectedSubcategory ? null : sub.name)}
