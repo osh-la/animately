@@ -24,15 +24,18 @@ const AnimationPreview: React.FC<AnimationPreviewProps> = ({ animation }) => {
   }, [animation]);
 
   return (
-    <div className=" bg-gray-200 p-10 flex flex-col items-center justify-center">
+    <div className="bg-gray-200 p-10 flex flex-col items-center justify-center">
       {animation ? (
         <>
           <div className={`text-6xl font-extrabold italic p-10 ${animation.id} `}>Animation</div>
           <p className="mt-4 text-lg font-bold">{animation.name}</p>
+         
         </>
+        
       ) : (
         <p className="text-gray-500">Select an animation</p>
       )}
+
     </div>
   );
 };

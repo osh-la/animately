@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnimationPreview from "./components/AnimationPreview";
 import AnimationList from "./components/AnimationList";
-import CodeSnippet from "./components/CodeSnippet"
+import CodeSnippet from "./components/CodeSnippet";
 
 const App: React.FC = () => {
   const [selectedAnimation, setSelectedAnimation] = useState<{
@@ -9,18 +9,45 @@ const App: React.FC = () => {
     name: string;
     css: string;
   } | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress((prev) => (prev < 100 ? prev + 1 : 100));
+    }, 30);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="h-screen">
-      <nav className="flex justify-between p-6">
-        <h1 className="text-4xl font-extrabold">Animately</h1>
-      </nav>
-   
-      <AnimationList onSelectAnimation={setSelectedAnimation} />
-    
-      <div className="">
-        <AnimationPreview animation={selectedAnimation} />
-        <CodeSnippet animation={selectedAnimation} />
+    <div className="relative h-screen">
+      
+      <div
+        className={`fixed top-0 left-0 w-full h-screen bg-[#C28F66] flex flex-col items-center justify-center transition-transform duration-1000 ease-in-out ${
+          loading ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+          <img src="/animately.png" alt="" />
+        <div className="mt-4 text-3xl text-white font-bold">{progress}%</div>
+      </div>
+
+      
+      <div className={`transition-opacity duration-1000 ${loading ? "opacity-0" : "opacity-100"}`}>
+        <nav className=" bg-[#C28F66]">
+          <img className="object-contain h-20 w-20" src="/animately.png" alt="Animately Logo" />
+        </nav>
+
+        <div className="">
+          <AnimationList onSelectAnimation={setSelectedAnimation} />
+          <AnimationPreview animation={selectedAnimation} />
+          <CodeSnippet animation={selectedAnimation} />
+        </div>
       </div>
     </div>
   );
