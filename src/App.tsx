@@ -34,7 +34,7 @@ const [progress, setProgress] = useState(0);
         }`}
       >
           <img src="/animately.png" alt="" />
-        <div className="mt-4 text-3xl text-white font-bold">{progress}%</div>
+        <div className="mt-4 text-4xl text-white font-bold">{progress}%</div>
       </div>
 
       
@@ -48,7 +48,7 @@ const [progress, setProgress] = useState(0);
         </div>
       </div>
       <div className="flex justify-center">
-        <p className="font-semibold">@Osh_la 2025</p>
+        <p className="font-semibold">©Osh_la </p>
       </div>
     </div>
   );
