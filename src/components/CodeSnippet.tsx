@@ -26,7 +26,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({ animation }) => {
           onClick={handleCopy}
           className="mt-4 text-sm md:text-base bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition active:bg-gray-900 active:scale-95"
         >
-          {copied ? "Copied!" : "Copy Class"}
+          {copied ? "Copied!" : "Copy Code"}
         </button>
       </div>
 
