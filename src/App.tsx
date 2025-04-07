@@ -20,7 +20,7 @@ const [progress, setProgress] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => (prev < 100 ? prev + 1 : 100));
-    }, 30);
+    }, 50);
 
     return () => clearInterval(interval);
   }, []);
