@@ -41,9 +41,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({ animation }) => {
       )}
 
      <div className="flex justify-center">
-     <button className="mt-4 text-sm md:text-base bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
-        Generate Tailwind coming soon...
-      </button>
+     <p className="">how to use: select animation, copy the code to your css and add the classname to your tag</p>
      </div>
     </div>
   );
