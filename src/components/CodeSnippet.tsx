@@ -41,7 +41,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({ animation }) => {
       )}
 
      <div className="flex justify-center">
-     <p className="">how to use: select animation, copy the code to your css and add the classname to your tag</p>
+     <p className="mt-4 text-sm md:text-base bg-red-700 text-white p-5 rounded-sm"><span className="font-extrabold">how to use </span>: select animation, copy the code to your css file and add the classname to your tag</p>
      </div>
     </div>
   );
