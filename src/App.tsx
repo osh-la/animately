@@ -29,11 +29,11 @@ const [progress, setProgress] = useState(0);
     <div className="relative h-screen">
       
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center transition-transform duration-1000 ease-in-out ${
+        className={`fixed p-6 top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center transition-transform duration-1000 ease-in-out ${
           loading ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-          <img src="/animately.png" alt="" />
+          <h1 className=" tracking-in-contract text-6xl font-extrabold italic text-amber-50">Animately</h1>
         <div className="mt-4 text-4xl text-amber-50 font-bold">{progress}%</div>
       </div>
 
