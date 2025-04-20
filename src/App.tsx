@@ -33,7 +33,7 @@ const [progress, setProgress] = useState(0);
           loading ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-          <h1 className=" tracking-in-contract text-6xl font-extrabold font-serif italic text-amber-50">Animately</h1>
+          <h1 className=" tracking-in-contract text-6xl font-extrabold font-serif italic text-amber-50">Anim8ly</h1>
         <div className="mt-4 text-4xl text-amber-50 font-bold">{progress}%</div>
       </div>
 
