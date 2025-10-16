@@ -73,14 +73,14 @@ const App: React.FC = () => {
   });
 
   return (
-    <div className="relative h-screen bg-black text-amber-50 font-mono">
+    <div className="relative h-screen bg-black font-mono">
       {/* Intro (typewriter) */}
       <div
         className={`fixed top-0 left-0 w-full h-screen flex flex-col items-center justify-center bg-black transition-transform duration-1000 ease-in-out ${
           loading ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="text-center space-y-4 px-6">
+        <div className="text-center text-amber-50 space-y-4 px-6">
           {lines.map((line, i) => (
             <h1
               key={i}
