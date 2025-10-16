@@ -86,16 +86,13 @@ const App: React.FC = () => {
               key={i}
               className={`whitespace-pre-wrap ${
                 i === fullLines.length - 1
-                  ? "text-6xl font-extrabold italic tracking-wider"
+                  ? "text-4xl font-extrabold italic tracking-wider"
                   : "text-2xl md:text-3xl"
               }`}
             >
               {line}
               {((!typingDone && i === currentTypingIndex) ||
-                (typingDone && i === fullLines.length - 1)) && (
-                // blinking cursor (keeps blinking after finish on last line)
-                <span className="inline-block ml-1 animate-pulse">|</span>
-              )}
+                (typingDone && i === fullLines.length - 1))}
             </h1>
           ))}
         </div>
