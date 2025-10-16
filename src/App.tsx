@@ -108,7 +108,7 @@ const App: React.FC = () => {
       </div>
 
       <div className="flex justify-center mt-6">
-        <p className="font-semibold text-sm">© Osh_la</p>
+        <p className="font-semibold text-sm text-white">© Osh_la</p>
       </div>
     </div>
   );
