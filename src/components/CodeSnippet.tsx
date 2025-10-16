@@ -13,7 +13,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({ animation }) => {
     navigator.clipboard.writeText(animation.css).then(() => {
       setCopied(true);
 
-      // Reset text after 1.5 seconds
+
       setTimeout(() => setCopied(false), 1500);
     });
   };
