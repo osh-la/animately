@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
   const fullLines = [
     "Hi, my name is Oshla",
-    "I am a Frontend Engineer or full stack if would you let me write my beloved PHP 😄",
+    "I am a Frontend Engineer or full stack developer if would you let me write my beloved PHP 😄",
     "And today i come bearing gifts... here you go!",
     "Anim8ly",
   ];
@@ -86,7 +86,7 @@ const App: React.FC = () => {
               key={i}
               className={`whitespace-pre-wrap ${
                 i === fullLines.length - 1
-                  ? "text-4xl font-extrabold italic tracking-wider"
+                  ? "text-2xl md:text-3xl font-extrabold italic tracking-wider"
                   : "text-2xl md:text-3xl"
               }`}
             >
