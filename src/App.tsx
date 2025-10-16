@@ -86,8 +86,8 @@ const App: React.FC = () => {
               key={i}
               className={`whitespace-pre-wrap ${
                 i === fullLines.length - 1
-                  ? "text-2xl md:text-3xl font-extrabold italic tracking-wider"
-                  : "text-2xl md:text-3xl"
+                  ? "text-xl md:text-2xl font-extrabold italic tracking-wider"
+                  : "text-xl md:text-2xl"
               }`}
             >
               {line}
