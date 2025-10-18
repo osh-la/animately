@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
   const fullLines = [
     "Hi, my name is Oshla",
-    "I'm a Frontend Engineer or Fullstack developer if you would let me write my beloved PHP 😄",
+    "I'm a Frontend Engineer",
     "And today, i come bearing gifts ... here you go",
     "Anim8ly",
   ];
