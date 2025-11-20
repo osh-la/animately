@@ -21,7 +21,7 @@ const App: React.FC = () => {
   const fullLines = [
     "Hi, my name is Oshla",
     "I'm a Frontend Engineer",
-    "And today, i come bearing gifts ... here you go",
+    "And today, i come bearing gifts ... here you go:",
     "Anim8ly",
   ];
 
